@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test button component default style 1`] = `
+<svg
+  className="sc-bczRLJ ccfSbU"
+>
+  icon-hamburger.svg
+</svg>
+`;

@@ -6,20 +6,9 @@ import { useForm } from "react-hook-form";
 import { StyledFormSection } from "./FormSection.styles";
 import ErrorText from "components/atoms/ErrorText/ErrorText";
 import Select from "components/atoms/Select/Select";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
+
 import FormButton from "components/atoms/FormButton/FormButton";
 const FormSection = (props) => {
-  // const schema = yup
-  //   .object({
-  //     firstName: yup.string().required(),
-  //     lastName: yup.string().required(),
-  //     email: yup.string().required(),
-  //     age: yup.number().positive().integer().required(),
-  //     number: yup.number().positive().integer().required(),
-  //   })
-  //   .required();
-
   const {
     register,
     handleSubmit,
@@ -32,7 +21,6 @@ const FormSection = (props) => {
     age: "",
     email: "",
     number: "",
-    // resolver: yupResolver(schema),
   });
 
   return (

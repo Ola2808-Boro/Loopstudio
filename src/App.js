@@ -9,19 +9,23 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       const data = await getData();
+      console.log(data);
       setData(data?.data);
     }
     fetchData();
   }, []);
 
   return (
-    Object.keys(data).length !== 0 && (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-        </Routes>
-      </BrowserRouter>
-    )
+    // Object.keys(data).length !== 0 && (
+    //   <BrowserRouter>
+    //     <Routes>
+    //       <Route path="/" element={<MainPage />} />
+    //     </Routes>
+    //   </BrowserRouter>
+    // )
+    <>
+      <h1>Ola</h1>
+    </>
   );
 }
 

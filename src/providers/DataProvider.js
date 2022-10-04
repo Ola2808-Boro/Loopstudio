@@ -21,7 +21,6 @@ const DataProvider = ({ children }) => {
     axios
       .get("/products")
       .then((data) => setProducts(data.data.products))
-      // .then((data) => setProducts(data.data.products2))
       .catch(function (error) {
         console.log(error.toJSON());
       });

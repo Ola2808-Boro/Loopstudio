@@ -16,16 +16,13 @@ function App() {
   }, []);
 
   return (
-    // Object.keys(data).length !== 0 && (
-    //   <BrowserRouter>
-    //     <Routes>
-    //       <Route path="/" element={<MainPage />} />
-    //     </Routes>
-    //   </BrowserRouter>
-    // )
-    <>
-      <h1>Ola</h1>
-    </>
+    Object.keys(data).length !== 0 && (
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+        </Routes>
+      </BrowserRouter>
+    )
   );
 }
 

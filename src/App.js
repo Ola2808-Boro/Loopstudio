@@ -3,6 +3,7 @@ import MainPage from "views/MainPage";
 import { dataContext } from "providers/DataProvider";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import getData from "hooks/getData";
+import Products from "views/Products";
 function App() {
   const { setData, data } = useContext(dataContext);
 
@@ -20,6 +21,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainPage />} />
+          <Route path="/products" element={<Products />} />
         </Routes>
       </BrowserRouter>
     )
